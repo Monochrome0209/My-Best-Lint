@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint",
+    "lint:html": "markuplint \"src/**/*.{htm,tsx,jsx}\""
   },
   "dependencies": {
     "next": "14.1.0",
@@ -14,6 +15,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@markuplint/jsx-parser": "^4.0.3",
+    "@markuplint/react-spec": "^4.0.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
