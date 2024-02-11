@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lint:fix": "eslint --fix \"src/**/*/{tsx,jsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*/{tsx,jsx}\" && prettier --write \"src/**/*/{tsx,jsx}\"",
     "lint:html": "markuplint \"src/**/*.{html,tsx,jsx}\""
   },
   "dependencies": {
